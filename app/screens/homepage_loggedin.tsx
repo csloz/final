@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
 
-import { Text, View } from "../components/themed";
+import { Text, View } from "../../components/themed";
 import { useThemeColors } from "../hooks/useThemeColors";
 import { useTranslation } from "react-i18next";
-import { useAuth } from "../context/Auth";
+import { useAuth } from "../../context/Auth";
 
 export default function HomePageLoggedIn() {
 	const { t } = useTranslation();

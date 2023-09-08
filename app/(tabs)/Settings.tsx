@@ -7,17 +7,17 @@
 */
 
 import { StyleSheet } from "react-native";
-import { View, Text } from "../components/themed";
+import { View, Text } from "../../components/themed";
 import { Ionicons } from "@expo/vector-icons";
 //Get our Language Selector
-import LanguageSelector from "../components/LanguageSelector";
+import LanguageSelector from "../../components/LanguageSelector";
 
 //Get our Theme Selector
-import ThemeSelector from "../components/ThemeSelector";
-import LogoutSelector from "../components/LogoutSelector";
+import ThemeSelector from "../../components/ThemeSelector";
+import LogoutSelector from "../../components/LogoutSelector";
 
 import { useTranslation } from "react-i18next";
-import { useAuth } from "../context/Auth";
+import { useAuth } from "../../context/Auth";
 
 //Return our container and the selectors
 export default () => {

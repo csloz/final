@@ -4,6 +4,9 @@ import { initReactI18next } from "react-i18next";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import "intl-pluralrules"; //Annoying req but needed for i18next
 
+import en from "../../constants/en";
+import zh from "../../constants/zh-CN";
+
 let fallbackLanguage = "en";
 
 const languageDetector = {
@@ -39,9 +42,6 @@ const languageDetector = {
 		//en
 	},
 };
-
-import en from "../constants/en";
-import zh from "../constants/zh-CN";
 
 const LANGUAGES = {
 	en,

@@ -2,8 +2,6 @@
 
 import { Link, Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import { Pressable } from "react-native";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
 
 //Get theme colors
 import { useThemeColors } from "../hooks/useThemeColors";
@@ -11,7 +9,7 @@ import { useThemeColors } from "../hooks/useThemeColors";
 //Get theme localization
 //import { getLocales } from "expo-localization";
 import { useTranslation } from "react-i18next";
-import { Provider, useAuth } from "../context/Auth";
+import { Provider, useAuth } from "../../context/Auth";
 //Setup props for tab bar
 type TabBarIconProps = {
 	color: string;

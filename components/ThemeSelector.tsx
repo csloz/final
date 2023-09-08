@@ -11,7 +11,7 @@ import {
 } from "react-native";
 
 import { View, Text } from "./themed";
-import { useThemeColors } from "../hooks/useThemeColors";
+import { useThemeColors } from "../app/hooks/useThemeColors";
 import { useCustomTheme, Themes } from "../context/Theme";
 
 type ThemeRowProps = {

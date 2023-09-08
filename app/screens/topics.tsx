@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { Text, View } from "../components/themed";
+import { Text, View } from "../../components/themed";
 import { useThemeColors } from "../hooks/useThemeColors";
 import { useTranslation } from "react-i18next";
 

@@ -5,7 +5,7 @@ import {
 	StyleSheet,
 	TouchableOpacity,
 } from "react-native";
-import { useAuth } from "../context/Auth";
+import { useAuth } from "../../context/Auth";
 import { Stack, useRouter } from "expo-router";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
