@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { DefaultTheme } from "@react-navigation/native";
+import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
 import { SplashScreen, Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
@@ -16,7 +16,7 @@ export {
 
 export const unstable_settings = {
 	// Ensure that reloading on `/modal` keeps a back button present.
-	initialRouteName: "(tabs)",
+	//initialRouteName: "(tabs)",
 };
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -52,27 +52,13 @@ export default function RootLayout() {
 
 function RootLayoutNav() {
 	const colorScheme = useColorScheme();
-	const { colors } = useThemeColors();
-	const theme = useCustomTheme();
 	const { authInitialized, user } = useAuth();
-	const navigationTheme = {
-		...DefaultTheme,
-		colors: {
-			...DefaultTheme.colors,
-			...DefaultTheme.colors,
-			primary: colors.tabBarActive,
-			background: colors.background,
-			card: colors.background,
-			text: colors.text,
-			border: "transparent",
-		},
-	};
 
-	// if (!authInitialized && !user) {
-	// 	console.log("not logged in, no authd user");
+	if (!authInitialized && !user) {
+		console.log("not logged in, no authd user");
 
-	// 	return null;
-	// }
+		return null;
+	}
 	if (authInitialized) {
 		return (
 			<ThemeProvider>

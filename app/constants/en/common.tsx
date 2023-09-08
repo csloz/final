@@ -5,4 +5,6 @@ export default {
 	dark: "Dark Mode",
 	logoutTitle: "Log Out",
 	logout: "Log out",
+	loginTitle: "Log In",
+	login: "Log in",
 };

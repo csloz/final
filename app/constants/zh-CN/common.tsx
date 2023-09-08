@@ -5,4 +5,6 @@ export default {
 	dark: "黑",
 	logoutTitle: "退出",
 	logout: "退出",
+	loginTitle: "进入",
+	login: "进入",
 };

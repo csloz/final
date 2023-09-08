@@ -53,7 +53,7 @@ export default function TabLayout() {
 						<TabBarIcon name="home" {...props} />
 					),
 					tabBarLabel: t("navigate:home"),
-					title: t("navigate:home"),
+					//title: t("navigate:home"),
 				}}
 			/>
 			<Tabs.Screen
@@ -63,7 +63,7 @@ export default function TabLayout() {
 						<TabBarIcon name="albums" {...props} />
 					),
 					tabBarLabel: t("navigate:topics"),
-					title: t("navigate:topics"),
+					//title: t("navigate:topics"),
 				}}
 			/>
 			<Tabs.Screen
@@ -72,8 +72,8 @@ export default function TabLayout() {
 					tabBarIcon: (props) => (
 						<TabBarIcon name="log-in-outline" {...props} />
 					),
-					tabBarLabel: t("navigate:settings"),
-					title: t("navigate:settings"),
+					tabBarLabel: t("navigate:signin"),
+					//title: t("navigate:signin"),
 				}}
 			/>
 			<Tabs.Screen

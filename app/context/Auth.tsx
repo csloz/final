@@ -78,8 +78,12 @@ export function Provider(props: ProviderProps) {
 				!inAuthGroup
 			) {
 				// Redirect to the sign-in page.
-				router.push("/");
-				//router.push("/sign-in");
+
+				console.log("Logging out, reloading app");
+				router.replace("/");
+				//router.push("/(auth)/");
+				//router.replace("/"); //("/");
+				//Fuck it, restart the damn app if the fucker won't reload nicely.
 			} else if (user && inAuthGroup) {
 				// Redirect away from the sign-in page.
 				router.push("/");
