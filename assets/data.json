@@ -1,0 +1,18 @@
+[
+	{
+		"topic": "basics",
+		"phrases": {
+			"Hello": "Nong Hau",
+			"Bye Bye": "Ze Wei",
+			"Thank you": "Xia Zhia Nong"
+		}
+	},
+	{
+		"topic": "swearing",
+		"phrases": {
+			"@#$": "Ca Na",
+			"Idiot": "Gangdu",
+			"Bastard": "Ba tzi"
+		}
+	}
+]
