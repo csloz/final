@@ -43,6 +43,7 @@ export default function RootLayout() {
 		return null;
 	}
 
+	//This wraps our Auth container around the layout so that auth is available everywhere
 	return (
 		<Provider>
 			<RootLayoutNav />
@@ -59,6 +60,10 @@ function RootLayoutNav() {
 
 		return null;
 	}
+
+	//Wrap everything in a theme provider at this level
+
+	//If we're auth'd then load our regular tab bar
 	if (authInitialized) {
 		return (
 			<ThemeProvider>
@@ -67,6 +72,10 @@ function RootLayoutNav() {
 				</Stack>
 			</ThemeProvider>
 		);
+		// Not logged in, so show the auth side.
+		// Auth tab also has a redirect on logged in
+		//redirect = { authInitialized }
+		// to force a refresh.  Probably a bit hacky, but took a few days of trying various things before I finally got login/logout working properly.
 	} else if (!authInitialized && !user) {
 		return (
 			<ThemeProvider>

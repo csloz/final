@@ -37,7 +37,7 @@ export default function TabLayout() {
 				tabBarActiveTintColor: colors.tabBarActive,
 			}}
 		>
-			{/* Hidden as this actually forces a redirect on login -> actual site */}
+			{/* Hidden as this actually forces a redirect on login -> actual site.  Without this the redirect she no worky. */}
 			<Tabs.Screen
 				name="index"
 				options={{
