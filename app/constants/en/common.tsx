@@ -10,4 +10,5 @@ export default {
 	email: "Email",
 	password: "Password",
 	createNewAccount: "Create New Account",
+	welcome: "Welcome",
 };

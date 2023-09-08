@@ -10,4 +10,5 @@ export default {
 	email: "邮件",
 	password: "密码",
 	createNewAccount: "申请用户",
+	welcome: "欢迎",
 };

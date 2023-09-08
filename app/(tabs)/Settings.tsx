@@ -14,6 +14,8 @@ import LanguageSelector from "../components/LanguageSelector";
 
 //Get our Theme Selector
 import ThemeSelector from "../components/ThemeSelector";
+import LogoutSelector from "../components/LogoutSelector";
+
 import { useTranslation } from "react-i18next";
 import { useAuth } from "../context/Auth";
 
@@ -26,15 +28,7 @@ export default () => {
 		<View style={styles.container}>
 			<LanguageSelector />
 			<ThemeSelector />
-			<View style={styles.container}>
-				<View style={styles.row}>
-					<Text style={styles.title}>{t("common:logoutTitle")}</Text>
-					<Ionicons color="#444" size={28} name="log-out-outline" />
-				</View>
-				<Text onPress={() => signOut()}>
-					{t("common:logout")} - {user?.email}
-				</Text>
-			</View>
+			<LogoutSelector />
 		</View>
 	);
 };
