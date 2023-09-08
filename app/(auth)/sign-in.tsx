@@ -8,11 +8,13 @@ import {
 import { useAuth } from "../context/Auth";
 import { Stack, useRouter } from "expo-router";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function SignIn() {
 	const { signIn } = useAuth();
 	const router = useRouter();
 
+	const { t } = useTranslation();
 	const emailRef = useRef("");
 	const passwordRef = useRef("");
 	return (
@@ -26,7 +28,7 @@ export default function SignIn() {
 				}}
 			>
 				<View>
-					<Text style={styles.label}>Email</Text>
+					<Text style={styles.label}>{t("common:email")} </Text>
 					<TextInput
 						placeholder="email"
 						autoCapitalize="none"
@@ -38,7 +40,7 @@ export default function SignIn() {
 					/>
 				</View>
 				<View>
-					<Text style={styles.label}>Password</Text>
+					<Text style={styles.label}>{t("common:password")}</Text>
 					<TextInput
 						placeholder="password"
 						secureTextEntry={true}
@@ -65,14 +67,14 @@ export default function SignIn() {
 					}}
 					style={styles.button}
 				>
-					<Text style={styles.buttonText}>Login</Text>
+					<Text style={styles.buttonText}>{t("common:login")}</Text>
 				</TouchableOpacity>
 				<View style={{ marginTop: 32 }}>
 					<Text
 						style={{ fontWeight: "500" }}
 						onPress={() => router.push("/sign-up")}
 					>
-						Click Here To Create A New Account
+						{t("common:createNewAccount")}
 					</Text>
 				</View>
 			</View>

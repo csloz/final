@@ -7,4 +7,7 @@ export default {
 	logout: "Log out",
 	loginTitle: "Log In",
 	login: "Log in",
+	email: "Email",
+	password: "Password",
+	createNewAccount: "Create New Account",
 };

@@ -4,4 +4,5 @@ export default {
 	settings: "设置",
 	lessons: "功课",
 	topics: "话题",
+	signin: "进入",
 };

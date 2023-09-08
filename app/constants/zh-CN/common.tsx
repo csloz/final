@@ -7,4 +7,7 @@ export default {
 	logout: "退出",
 	loginTitle: "进入",
 	login: "进入",
+	email: "邮件",
+	password: "密码",
+	createNewAccount: "申请用户",
 };

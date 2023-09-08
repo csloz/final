@@ -8,11 +8,12 @@ import {
 import { useAuth } from "../context/Auth";
 import { Stack, useRouter } from "expo-router";
 import { useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function SignUp() {
 	const { signUp } = useAuth();
 	const router = useRouter();
-
+	const { t } = useTranslation();
 	const emailRef = useRef("");
 	const passwordRef = useRef("");
 	const userNameRef = useRef("");
