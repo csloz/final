@@ -4,7 +4,7 @@ import { Link, Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 
 //Get theme colors
-import { useThemeColors } from "../hooks/useThemeColors";
+import { useThemeColors } from "../../hooks/useThemeColors";
 
 //Get theme localization
 //import { getLocales } from "expo-localization";

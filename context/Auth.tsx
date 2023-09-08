@@ -1,6 +1,6 @@
 import { useRootNavigation, useRouter, useSegments } from "expo-router";
 import React, { useContext, useEffect, useState } from "react";
-import { appwrite } from "../app/lib/appwrite-service";
+import { appwrite } from "../lib/appwrite-service";
 import { Models } from "appwrite";
 
 // Define the AuthContextValue interface

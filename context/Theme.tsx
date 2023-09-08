@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-import { useColorScheme } from "../app/hooks/useColorScheme";
+import { useColorScheme } from "../hooks/useColorScheme";
 
 export const Themes: UserTheme[] = ["light", "dark"];
 export type UserTheme = "light" | "dark";

@@ -4,10 +4,11 @@ import { SplashScreen, Stack } from "expo-router";
 import { useFonts } from "expo-font";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 
-import { useThemeColors } from "./hooks/useThemeColors";
+import { useThemeColors } from "../hooks/useThemeColors";
 import { useCustomTheme, ThemeProvider } from "../context/Theme";
 import { useColorScheme } from "react-native";
 import { Provider, useAuth } from "../context/Auth";
+import "../hooks/useLocalization";
 
 export {
 	// Catch any errors thrown by the Layout component.

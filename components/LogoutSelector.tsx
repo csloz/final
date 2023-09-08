@@ -5,7 +5,7 @@ import React from "react";
 import { StyleSheet } from "react-native";
 
 import { View, Text } from "./themed";
-import { useThemeColors } from "../app/hooks/useThemeColors";
+import { useThemeColors } from "../hooks/useThemeColors";
 import { useCustomTheme, Themes } from "../context/Theme";
 
 import { useAuth } from "../context/Auth";
